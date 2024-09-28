@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Backgrounds/iphone-15-pro-3840x2160-black-sand-ios-17-25168.jpeg');
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-family: 'Stencil', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tabs a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .tabs a:hover {
+            background-color: #555;
+        }
+        .tabs a.active {
+            background-color: #007FAB;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h2 {
+            text-align: left;
+            text-decoration: underline;
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+ /*       .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s; 
+        }
+        .back-button:hover {
+            background-color: #555; 
+        } */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .tabs a {
+                padding: 8px 16px;
+                margin: 0 5px;
+            }
+        }
+        /* New CSS rule to change the color of all strong elements */
+        strong {
+            color: #007FAB;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ahmad Alsharif | Data Analytics Portfolio</h1>
+        <h1>⚠️work in progress⚠️</h1>
+        
+        <div class="tabs">
+            <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
+            <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
+            <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
+        </div>
+        
+        <section id="projects" class="tab-content active">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>R Language: Agriculture Crops Yield</strong>
+                    <p>This project investigates the impact of rainfall and temperature on crop yield using R. By analyzing data on these environmental factors and their correlation with crop productivity, the study aims to identify optimal conditions for maximizing yields. The findings will provide actionable recommendations for farmers and suggest strategies for mitigating the effects of extreme weather conditions, contributing to more sustainable agricultural practices.</p>
+                    <img src="path/to/project1-image.jpg" alt="Project Image">
+                </li>
+                <li>
+                    <strong>SQL:</strong>
+                    <p>DSECRIPTION.</p>
+                    <img src="path/to/project2-image.jpg" alt="Project Image">
+                </li>
+                <li>
+                    <strong>Power Bi:</strong>
+                    <p>DSECRIPTION.</p>
+                    <img src="path/to/project1-image.jpg" alt="Project Image">
+                </li>
+                <li>
+                    <strong>Tableau:</strong>
+                    <p>DSECRIPTION.</p>
+                    <img src="path/to/project1-image.jpg" alt="Project Image">
+                </li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+        
+        <section id="exercise-files" class="tab-content">
+            <h2>Exercise Files</h2>
+            <ul>
+                <li>
+                    <strong>R Language: Exercise 1</strong>
+                    <p>1. Creating a new data frames, subsetting the dataset.</p>
+                    <p>2. Grouping observations by class.</p>
+                    <p>3. Generating bar-charts reflecting the dataset grouping.</p>
+                    <p><a href="Exercise files/R/Exercise 1.ipynb">Excercise file</a></p>
+                </li>
+                <li>
+                    <strong>R Language: Exercise 2</strong>
+                    <p>1. Manipulating column names.</p>
+                    <p>2. Generatating ggplot visualizations.</p>
+                    <p>3. Defining the linear regression model.</p>
+                    <p>4. Generating linear regression line in both plot() and ggplot().</p>
+                    <p>5. Finding the correlation between 2 variables.</p>
+                    <p><a href="Exercise files/R/Exercise 2.ipynb">Excercise file</a></p>
+                </li>
+                <li>
+                    <strong>R Language: Exercise 3</strong>
+                    <p>1. Creating a new data frame by subsetting the dataset.</p>
+                    <p>2. Fitting a k-means clustering model.</p>
+                    <p>3. Finding the centroids.</p>
+                    <p>4. Generating a plot representing the K-Means.</p>
+                    <p><a href="Exercise files/R/Exercise 3.ipynb">Excercise file</a></p>
+                </li>
+                <!-- Add more exercise files as needed -->
+            </ul>
+        </section>
+        
+        <section id="resume" class="tab-content">
+            <h2>Resume</h2>
+            <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
+            <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2">
+        </section>
+    </div>
 
+    <script>
+        function showTab(event, tabId) {
+            event.preventDefault();
+            var tabs = document.querySelectorAll('.tab-link');
+            var contents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+            
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+            
+            document.querySelector('#' + tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
