@@ -126,82 +126,70 @@
         
         <section id="projects" class="tab-content active">
             <div class="sub-tabs">
-                <a href="#project1" class="sub-tab-link active" onclick="showSubTab(event, 'project1')">Project 1</a>
-                <a href="#project2" class="sub-tab-link" onclick="showSubTab(event, 'project2')">Project 2</a>
-                <a href="#project3" class="sub-tab-link" onclick="showSubTab(event, 'project3')">Project 3</a>
-                <a href="#project4" class="sub-tab-link" onclick="showSubTab(event, 'project4')">Project 4</a>
-                <a href="#project5" class="sub-tab-link" onclick="showSubTab(event, 'project5')">Project 5</a>
+                <a href="#r" class="sub-tab-link active" onclick="showSubTab(event, 'r')">R</a>
+                <a href="#sql" class="sub-tab-link" onclick="showSubTab(event, 'sql')">SQL</a>
+                <a href="#python" class="sub-tab-link" onclick="showSubTab(event, 'python')">Python</a>
+                <a href="#powerbi" class="sub-tab-link" onclick="showSubTab(event, 'powerbi')">Power Bi</a>
+                <a href="#tableau" class="sub-tab-link" onclick="showSubTab(event, 'tableau')">Tableau</a>
             </div>
-            <div id="project1" class="sub-tab-content active">
+            <div id="r" class="sub-tab-content active">
                 <div class="sub-tabs">
-                    <a href="#subproject1-1" class="sub-tab-link active" onclick="showSubTab(event, 'subproject1-1')">Sub-Project 1-1</a>
-                    <a href="#subproject1-2" class="sub-tab-link" onclick="showSubTab(event, 'subproject1-2')">Sub-Project 1-2</a>
+                    <a href="#subr1" class="sub-tab-link active" onclick="showSubTab(event, 'subr1')">Sub-R 1</a>
+                    <a href="#subr2" class="sub-tab-link" onclick="showSubTab(event, 'subr2')">Sub-R 2</a>
                 </div>
-                <div id="subproject1-1" class="sub-tab-content active">
-                    <h2>Sub-Project 1-1</h2>
-                    <p>Details about Sub-Project 1-1.</p>
+                <div id="subr1" class="sub-tab-content active">
+                    <h2>R Language: Agriculture Crops Yield</h2>
+                    <p>This project investigates the impact of rainfall and temperature on crop yield using R. By analyzing data on these environmental factors and their correlation with crop productivity, the study aims to identify optimal conditions for maximizing yields. The findings will provide actionable recommendations for farmers and suggest strategies for mitigating the effects of extreme weather conditions, contributing to more sustainable agricultural practices.</p>
+                    <img src="path/to/project1-image.jpg" alt="Project Image">
                 </div>
-                <div id="subproject1-2" class="sub-tab-content">
-                    <h2>Sub-Project 1-2</h2>
-                    <p>Details about Sub-Project 1-2.</p>
+                <div id="subr2" class="sub-tab-content">
+                    <h2>Sub-R 2</h2>
+                    <p>Details about Sub-R 2.</p>
                 </div>
             </div>
-            <div id="project2" class="sub-tab-content">
+            <div id="sql" class="sub-tab-content">
                 <div class="sub-tabs">
-                    <a href="#subproject2-1" class="sub-tab-link active" onclick="showSubTab(event, 'subproject2-1')">Sub-Project 2-1</a>
-                    <a href="#subproject2-2" class="sub-tab-link" onclick="showSubTab(event, 'subproject2-2')">Sub-Project 2-2</a>
+                    <a href="#subsql1" class="sub-tab-link active" onclick="showSubTab(event, 'subsql1')">Sub-SQL 1</a>
+                    <a href="#subsql2" class="sub-tab-link" onclick="showSubTab(event, 'subsql2')">Sub-SQL 2</a>
                 </div>
-                <div id="subproject2-1" class="sub-tab-content active">
-                    <h2>Sub-Project 2-1</h2>
-                    <p>Details about Sub-Project 2-1.</p>
+                <div id="subsql1" class="sub-tab-content active">
+                    <h2>Sub-SQL 1</h2>
+                    <p>Details about Sub-SQL 1.</p>
                 </div>
-                <div id="subproject2-2" class="sub-tab-content">
-                    <h2>Sub-Project 2-2</h2>
-                    <p>Details about Sub-Project 2-2.</p>
+                <div id="subsql2" class="sub-tab-content">
+                    <h2>Sub-SQL 2</h2>
+                    <p>Details about Sub-SQL 2.</p>
                 </div>
             </div>
-            <!-- Repeat for other projects -->
-        </section>
-        
-        <section id="exercise-files" class="tab-content">
-            <ul>
-                <li>
-                    <strong>R Language: Exercise 1</strong>
-                    <p>1. Creating a new data frames, subsetting the dataset.</p>
-                    <p>2. Grouping observations by class.</p>
-                    <p>3. Generating bar-charts reflecting the dataset grouping.</p>
-                    <p><a href="Exercise files/R/Exercise 1.ipynb">Excercise file</a></p>
-                </li>
-                <li>
-                    <strong>R Language: Exercise 2</strong>
-                    <p>1. Manipulating column names.</p>
-                    <p>2. Generatating ggplot visualizations.</p>
-                    <p>3. Defining the linear regression model.</p>
-                    <p>4. Generating linear regression line in both plot() and ggplot().</p>
-                    <p>5. Finding the correlation between 2 variables.</p>
-                    <p><a href="Exercise files/R/Exercise 2.ipynb">Excercise file</a></p>
-                </li>
-                <li>
-                    <strong>R Language: Exercise 3</strong>
-                    <p>1. Creating a new data frame by subsetting the dataset.</p>
-                    <p>2. Fitting a k-means clustering model.</p>
-                    <p>3. Finding the centroids.</p>
-                    <p>4. Generating a plot representing the K-Means.</p>
-                    <p><a href="Exercise files/R/Exercise 3.ipynb">Excercise file</a></p>
-                </li>
-            </ul>
-        </section>
-        
-        <section id="resume" class="tab-content">
-            <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
-            <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2">
-        </section>
-    </div>
-
-    <script>
-        function showTab(event, tabId) {
-            event.preventDefault();
-            var tabs = document.querySelectorAll('.tab-link');
-            var contents = document.querySelectorAll('.tab-content');
-            
-            tabs.forEach(function
+            <div id="python" class="sub-tab-content">
+                <div class="sub-tabs">
+                    <a href="#subpython1" class="sub-tab-link active" onclick="showSubTab(event, 'subpython1')">Sub-Python 1</a>
+                    <a href="#subpython2" class="sub-tab-link" onclick="showSubTab(event, 'subpython2')">Sub-Python 2</a>
+                </div>
+                <div id="subpython1" class="sub-tab-content active">
+                    <h2>Sub-Python 1</h2>
+                    <p>Details about Sub-Python 1.</p>
+                </div>
+                <div id="subpython2" class="sub-tab-content">
+                    <h2>Sub-Python 2</h2>
+                    <p>Details about Sub-Python 2.</p>
+                </div>
+            </div>
+            <div id="powerbi" class="sub-tab-content">
+                <div class="sub-tabs">
+                    <a href="#subpowerbi1" class="sub-tab-link active" onclick="showSubTab(event, 'subpowerbi1')">Sub-Power Bi 1</a>
+                    <a href="#subpowerbi2" class="sub-tab-link" onclick="showSubTab(event, 'subpowerbi2')">Sub-Power Bi 2</a>
+                </div>
+                <div id="subpowerbi1" class="sub-tab-content active">
+                    <h2>Sub-Power Bi 1</h2>
+                    <p>Details about Sub-Power Bi 1.</p>
+                </div>
+                <div id="subpowerbi2" class="sub-tab-content">
+                    <h2>Sub-Power Bi 2</h2>
+                    <p>Details about Sub-Power Bi 2.</p>
+                </div>
+            </div>
+            <div id="tableau" class="sub-tab-content">
+                <div class="sub-tabs">
+                    <a href="#subtableau1" class="sub-tab-link active" onclick="showSubTab(event, 'subtableau1')">Sub-Tableau 1</a>
+                    <a href="#subtableau2" class="sub-tab-link" onclick="showSubTab(event, 'subtableau2')">Sub-Tableau 2
