@@ -71,7 +71,20 @@
             height: auto;
             border-radius: 10px;
             margin-top: 10px;
+        } /*
+       .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s; 
         }
+        .back-button:hover {
+            background-color: #555; 
+        } */
         @media (max-width: 600px) {
             .container {
                 padding: 10px;
@@ -81,6 +94,7 @@
                 margin: 0 5px;
             }
         }
+        /* New CSS rule to change the color of all strong elements */
         strong {
             color: #007FAB;
         }
@@ -90,45 +104,42 @@
     <div class="container">
         <h1>Ahmad Alsharif | Data Analytics Portfolio</h1>
         <h1>Coming soon 🎉</h1>
-        
+
         <div class="tabs">
             <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
             <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
             <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
         </div>
-        
+
         <section id="projects" class="tab-content active">
-            <div class="sub-tabs">
-                <a href="#r" class="sub-tab-link active" onclick="showSubTab(event, 'r')">R</a>
-                <a href="#sql" class="sub-tab-link" onclick="showSubTab(event, 'sql')">SQL</a>
-                <a href="#python" class="sub-tab-link" onclick="showSubTab(event, 'python')">Python</a>
-                <a href="#powerbi" class="sub-tab-link" onclick="showSubTab(event, 'powerbi')">Power Bi</a>
-                <a href="#tableau" class="sub-tab-link" onclick="showSubTab(event, 'tableau')">Tableau</a>
-            </div>
-            <div id="r" class="sub-tab-content active">
-                <h2>R Language: Agriculture Crops Yield</h2>
-                <p>This project investigates the impact of rainfall and temperature on crop yield using R. By analyzing data on these environmental factors and their correlation with crop productivity, the study aims to identify optimal conditions for maximizing yields. The findings will provide actionable recommendations for farmers and suggest strategies for mitigating the effects of extreme weather conditions, contributing to more sustainable agricultural practices.</p>
-                <img src="path/to/project1-image.jpg" alt="Project Image">
-            </div>
-            <div id="sql" class="sub-tab-content">
-                <h2>SQL</h2>
-                <p>Details about SQL projects.</p>
-            </div>
-            <div id="python" class="sub-tab-content">
-                <h2>Python</h2>
-                <p>Details about Python projects.</p>
-            </div>
-            <div id="powerbi" class="sub-tab-content">
-                <h2>Power Bi</h2>
-                <p>Details about Power Bi projects.</p>
-            </div>
-            <div id="tableau" class="sub-tab-content">
-                <h2>Tableau</h2>
-                <p>Details about Tableau projects.</p>
-            </div>
+            <!-- <h2>Projects</h2> -->
+            <ul>
+                <li>
+                    <strong>R Language: Agriculture Crops Yield</strong>
+                    <p>This project investigates the impact of rainfall and temperature on crop yield using R. By analyzing data on these environmental factors and their correlation with crop productivity, the study aims to identify optimal conditions for maximizing yields. The findings will provide actionable recommendations for farmers and suggest strategies for mitigating the effects of extreme weather conditions, contributing to more sustainable agricultural practices.</p>
+                    <img src="path/to/project1-image.jpg" alt="Project Image">
+                </li>
+                <li>
+                    <strong>SQL:</strong>
+                    <p>DSECRIPTION.</p>
+                    <img src="path/to/project2-image.jpg" alt="Project Image">
+                </li>
+                <li>
+                    <strong>Power Bi:</strong>
+                    <p>DSECRIPTION.</p>
+                    <img src="path/to/project1-image.jpg" alt="Project Image">
+                </li>
+                <li>
+                    <strong>Tableau:</strong>
+                    <p>DSECRIPTION.</p>
+                    <img src="path/to/project1-image.jpg" alt="Project Image">
+                </li>
+                <!-- Add more projects as needed -->
+            </ul>
         </section>
-        
+
         <section id="exercise-files" class="tab-content">
+            <!-- <h2>Exercise files</h2> --->
             <ul>
                 <li>
                     <strong>R Language: Exercise 1</strong>
@@ -154,10 +165,12 @@
                     <p>4. Generating a plot representing the K-Means.</p>
                     <p><a href="Exercise files/R/Exercise 3.ipynb">Excercise file</a></p>
                 </li>
+                <!-- Add more exercise files as needed -->
             </ul>
         </section>
-        
+
         <section id="resume" class="tab-content">
+            <!-- <h2>Resume</h2> --->
             <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
             <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2">
         </section>
@@ -168,33 +181,16 @@
             event.preventDefault();
             var tabs = document.querySelectorAll('.tab-link');
             var contents = document.querySelectorAll('.tab-content');
-            
+
             tabs.forEach(function(tab) {
                 tab.classList.remove('active');
             });
-            
+
             contents.forEach(function(content) {
                 content.classList.remove('active');
             });
-            
-            document.querySelector('#' + tabId).classList.add('active');
-            event.currentTarget.classList.add('active');
-        }
 
-        function showSubTab(event, subTabId) {
-            event.preventDefault();
-            var subTabs = document.querySelectorAll('.sub-tab-link');
-            var subContents = document.querySelectorAll('.sub-tab-content');
-            
-            subTabs.forEach(function(subTab) {
-                subTab.classList.remove('active');
-            });
-            
-            subContents.forEach(function(subContent) {
-                subContent.classList.remove('active');
-            });
-            
-            document.querySelector('#' + subTabId).classList.add('active');
+            document.querySelector('#' + tabId).classList.add('active');
             event.currentTarget.classList.add('active');
         }
     </script>
