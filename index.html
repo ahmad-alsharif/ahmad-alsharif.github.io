@@ -147,12 +147,12 @@
             event.preventDefault();
 
             // Determine if the clicked tab is a main tab or a nested tab
-            var isMainTab = event.currentTarget.closest('.tabs').parentElement.tagName === 'BODY';
+            var isMainTab = event.currentTarget.closest('.tabs').parentElement.classList.contains('container');
 
             if (isMainTab) {
                 // Handle main tabs
-                var mainTabs = document.querySelectorAll('.tabs > .tab-link');
-                var mainContents = document.querySelectorAll('body > .tab-content');
+                var mainTabs = document.querySelectorAll('.container > .tabs > .tab-link');
+                var mainContents = document.querySelectorAll('.container > .tab-content');
 
                 mainTabs.forEach(function(tab) {
                     tab.classList.remove('active');
