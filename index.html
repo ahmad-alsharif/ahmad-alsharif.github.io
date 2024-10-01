@@ -73,20 +73,7 @@
             height: auto;
             border-radius: 10px;
             margin-top: 10px;
-        } /*
-       .back-button {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s; 
         }
-        .back-button:hover {
-            background-color: #555; 
-        } */
         @media (max-width: 600px) {
             .container {
                 padding: 10px;
@@ -96,7 +83,6 @@
                 margin: 0 5px;
             }
         }
-        /* New CSS rule to change the color of all strong elements */
         strong {
             color: #007FAB;
         }
@@ -105,98 +91,96 @@
 <body>
     <div class="container">
         <h1>Ahmad Alsharif | Data Analytics Portfolio</h1>
-        <!-- <h1>Coming soon 🎉</h1> -->
 
         <div class="tabs">
-    <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
-    <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
-    <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
-</div>
+            <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
+            <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
+            <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
+        </div>
 
-<section id="projects" class="tab-content active">
-    <div class="tabs">
-        <a href="#r" class="tab-link active" onclick="showTab(event, 'r')">R</a>
-        <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a>
-        <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a>
+        <section id="projects" class="tab-content active">
+            <div class="tabs">
+                <a href="#r" class="tab-link active" onclick="showTab(event, 'r')">R</a>
+                <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a>
+                <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a>
+            </div>
+            <section id="r" class="tab-content active">
+                <ul>
+                    <li>
+                        <strong>Agriculture Crops Yield | R </strong>
+                        <p>This project investigates the impact of rainfall and temperature on crop yield using R...</p>
+                        <!-- Additional content here -->
+                    </li>
+                </ul>
+            </section>
+            <section id="sql" class="tab-content">
+                <ul>
+                    <li>
+                        <strong>Agriculture Crops Yield | SQL </strong>
+                        <p>Analysis outcome...</p>
+                        <!-- Additional content here -->
+                    </li>
+                </ul>
+            </section>
+            <section id="python" class="tab-content">
+                <ul>
+                    <li>
+                        <strong>Agriculture Crops Yield | Python </strong>
+                        <p>Python project details...</p>
+                        <!-- Additional content here -->
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="exercise-files" class="tab-content">
+            <!-- Content for Exercise Files -->
+        </section>
+
+        <section id="resume" class="tab-content">
+            <!-- Content for Resume -->
+        </section>
     </div>
-    <section id="r" class="tab-content active">
-        <ul>
-            <li>
-                <strong>Agriculture Crops Yield | R </strong>
-                <p>This project investigates the impact of rainfall and temperature on crop yield using R...</p>
-                <!-- Additional content here -->
-            </li>
-        </ul>
-    </section>
-    <section id="sql" class="tab-content">
-        <ul>
-            <li>
-                <strong>Agriculture Crops Yield | SQL </strong>
-                <p>Analysis outcome...</p>
-                <!-- Additional content here -->
-            </li>
-        </ul>
-    </section>
-    <section id="python" class="tab-content">
-        <ul>
-            <li>
-                <strong>Agriculture Crops Yield | Python </strong>
-                <p>Python project details...</p>
-                <!-- Additional content here -->
-            </li>
-        </ul>
-    </section>
-</section>
-
-<section id="exercise-files" class="tab-content">
-    <!-- Content for Exercise Files -->
-</section>
-
-<section id="resume" class="tab-content">
-    <!-- Content for Resume -->
-</section>
-
 
     <script>
         function showTab(event, tabId) {
-        event.preventDefault();
-    
-        // Determine if the clicked tab is a main tab or a nested tab
-        var isMainTab = event.currentTarget.closest('.tabs').parentElement.tagName === 'BODY';
-    
-        if (isMainTab) {
-            // Handle main tabs
-            var mainTabs = document.querySelectorAll('.tabs > .tab-link');
-            var mainContents = document.querySelectorAll('body > .tab-content');
-    
-            mainTabs.forEach(function(tab) {
-                tab.classList.remove('active');
-            });
-    
-            mainContents.forEach(function(content) {
-                content.classList.remove('active');
-            });
-    
-            document.querySelector('#' + tabId).classList.add('active');
-            event.currentTarget.classList.add('active');
-        } else {
-            // Handle nested tabs
-            var nestedTabs = event.currentTarget.closest('.tabs').querySelectorAll('.tab-link');
-            var nestedContents = event.currentTarget.closest('.tab-content').querySelectorAll('.tab-content');
-    
-            nestedTabs.forEach(function(tab) {
-                tab.classList.remove('active');
-            });
-    
-            nestedContents.forEach(function(content) {
-                content.classList.remove('active');
-            });
-    
-            document.querySelector('#' + tabId).classList.add('active');
-            event.currentTarget.classList.add('active');
-        }
-    }
+            event.preventDefault();
 
+            // Determine if the clicked tab is a main tab or a nested tab
+            var isMainTab = event.currentTarget.closest('.tabs').parentElement.tagName === 'BODY';
+
+            if (isMainTab) {
+                // Handle main tabs
+                var mainTabs = document.querySelectorAll('.tabs > .tab-link');
+                var mainContents = document.querySelectorAll('body > .tab-content');
+
+                mainTabs.forEach(function(tab) {
+                    tab.classList.remove('active');
+                });
+
+                mainContents.forEach(function(content) {
+                    content.classList.remove('active');
+                });
+
+                document.querySelector('#' + tabId).classList.add('active');
+                event.currentTarget.classList.add('active');
+            } else {
+                // Handle nested tabs
+                var nestedTabs = event.currentTarget.closest('.tabs').querySelectorAll('.tab-link');
+                var nestedContents = event.currentTarget.closest('.tab-content').querySelectorAll('.tab-content');
+
+                nestedTabs.forEach(function(tab) {
+                    tab.classList.remove('active');
+                });
+
+                nestedContents.forEach(function(content) {
+                    content.classList.remove('active');
+                });
+
+                document.querySelector('#' + tabId).classList.add('active');
+                event.currentTarget.classList.add('active');
+            }
+        }
     </script>
 </body>
 </html>
