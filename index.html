@@ -198,21 +198,44 @@
 
     <script>
         function showTab(event, tabId) {
-            event.preventDefault();
-            var tabs = document.querySelectorAll('.tab-link');
-            var contents = document.querySelectorAll('.tab-content');
-
-            tabs.forEach(function(tab) {
+        event.preventDefault();
+    
+        // Determine if the clicked tab is a main tab or a nested tab
+        var isMainTab = event.currentTarget.closest('.tabs').parentElement.tagName === 'BODY';
+    
+        if (isMainTab) {
+            // Handle main tabs
+            var mainTabs = document.querySelectorAll('.tabs > .tab-link');
+            var mainContents = document.querySelectorAll('body > .tab-content');
+    
+            mainTabs.forEach(function(tab) {
                 tab.classList.remove('active');
             });
-
-            contents.forEach(function(content) {
+    
+            mainContents.forEach(function(content) {
                 content.classList.remove('active');
             });
-
+    
+            document.querySelector('#' + tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        } else {
+            // Handle nested tabs
+            var nestedTabs = event.currentTarget.closest('.tabs').querySelectorAll('.tab-link');
+            var nestedContents = event.currentTarget.closest('.tab-content').querySelectorAll('.tab-content');
+    
+            nestedTabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+    
+            nestedContents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+    
             document.querySelector('#' + tabId).classList.add('active');
             event.currentTarget.classList.add('active');
         }
+    }
+
     </script>
 </body>
 </html>
