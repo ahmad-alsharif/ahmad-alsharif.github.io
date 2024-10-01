@@ -108,81 +108,54 @@
         <!-- <h1>Coming soon 🎉</h1> -->
 
         <div class="tabs">
-            <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
-            <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
-            <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
-        </div>
-        
-        <section id="projects" class="tab-content active">
-            <div class="tabs">
-                <a href="#r" class="tab-link active" onclick="showTab(event, 'r')">R</a>
-                <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a>
-                <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a>
-            </div>
-            <section id="r" class="tab-content active">
-                <ul>
-                    <li>
-                        <strong>Agriculture Crops Yield | R </strong>
-                        <p>This project investigates the impact of rainfall and temperature on crop yield using R...</p>
-                        <!-- Additional content here -->
-                    </li>
-                </ul>
-            </section>
-            <section id="sql" class="tab-content">
-                <ul>
-                    <li>
-                        <strong>Agriculture Crops Yield | SQL </strong>
-                        <p>Analysis outcome...</p>
-                        <!-- Additional content here -->
-                    </li>
-                </ul>
-            </section>
-            <section id="python" class="tab-content">
-                <ul>
-                    <li>
-                        <strong>Agriculture Crops Yield | Python </strong>
-                        <p>Python project details...</p>
-                        <!-- Additional content here -->
-                    </li>
-                </ul>
-            </section>
-        <section id="exercise-files" class="tab-content">
-            <!-- <h2>Exercise files</h2> --->
-            <ul>
-                <li>
-                    <strong>Exercise 1 | R</strong>
-                    <p>1. Creating a new data frames, subsetting the dataset.</p>
-                    <p>2. Grouping observations by class.</p>
-                    <p>3. Generating bar-charts reflecting the dataset grouping.</p>
-                    <p><a href="Exercise files/R/Exercise 1.ipynb">Excercise file</a></p>
-                </li>
-                <li>
-                    <strong>Exercise 2 | R</strong>
-                    <p>1. Manipulating column names.</p>
-                    <p>2. Generatating ggplot visualizations.</p>
-                    <p>3. Defining the linear regression model.</p>
-                    <p>4. Generating linear regression line in both plot() and ggplot().</p>
-                    <p>5. Finding the correlation between 2 variables.</p>
-                    <p><a href="Exercise files/R/Exercise 2.ipynb">Excercise file</a></p>
-                </li>
-                <li>
-                    <strong>Exercise 3 | R</strong>
-                    <p>1. Creating a new data frame by subsetting the dataset.</p>
-                    <p>2. Fitting a k-means clustering model.</p>
-                    <p>3. Finding the centroids.</p>
-                    <p>4. Generating a plot representing the K-Means.</p>
-                    <p><a href="Exercise files/R/Exercise 3.ipynb">Excercise file</a></p>
-                </li>
-                <!-- Add more exercise files as needed -->
-            </ul>
-        </section>
+    <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
+    <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
+    <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
+</div>
 
-        <section id="resume" class="tab-content">
-            <!-- <h2>Resume</h2> --->
-            <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
-            <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2">
-        </section>
+<section id="projects" class="tab-content active">
+    <div class="tabs">
+        <a href="#r" class="tab-link active" onclick="showTab(event, 'r')">R</a>
+        <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a>
+        <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a>
     </div>
+    <section id="r" class="tab-content active">
+        <ul>
+            <li>
+                <strong>Agriculture Crops Yield | R </strong>
+                <p>This project investigates the impact of rainfall and temperature on crop yield using R...</p>
+                <!-- Additional content here -->
+            </li>
+        </ul>
+    </section>
+    <section id="sql" class="tab-content">
+        <ul>
+            <li>
+                <strong>Agriculture Crops Yield | SQL </strong>
+                <p>Analysis outcome...</p>
+                <!-- Additional content here -->
+            </li>
+        </ul>
+    </section>
+    <section id="python" class="tab-content">
+        <ul>
+            <li>
+                <strong>Agriculture Crops Yield | Python </strong>
+                <p>Python project details...</p>
+                <!-- Additional content here -->
+            </li>
+        </ul>
+    </section>
+</section>
+
+<section id="exercise-files" class="tab-content">
+    <!-- Content for Exercise Files -->
+</section>
+
+<section id="resume" class="tab-content">
+    <!-- Content for Resume -->
+</section>
+
 
     <script>
         function showTab(event, tabId) {
