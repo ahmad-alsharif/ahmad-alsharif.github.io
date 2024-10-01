@@ -108,18 +108,18 @@
         <!-- <h1>Coming soon 🎉</h1> -->
 
         <div class="tabs">
-            <a href="#projects" class="tab-link" onclick="showTab(event, 'projects')">Projects</a>
+            <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
             <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
             <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
         </div>
         
-        <section id="projects" class="tab-content">
+        <section id="projects" class="tab-content active">
             <div class="tabs">
                 <a href="#r" class="tab-link active" onclick="showTab(event, 'r')">R</a>
                 <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a>
                 <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a>
             </div>
-            <section id="r" class="tab-content">
+            <section id="r" class="tab-content active">
                 <ul>
                     <li>
                         <strong>Agriculture Crops Yield | R </strong>
@@ -147,6 +147,15 @@
                 </ul>
             </section>
         </section>
+        
+        <section id="exercise-files" class="tab-content">
+            <!-- Content for Exercise Files -->
+        </section>
+        
+        <section id="resume" class="tab-content">
+            <!-- Content for Resume -->
+        </section>
+
 
 
         <section id="exercise-files" class="tab-content">
