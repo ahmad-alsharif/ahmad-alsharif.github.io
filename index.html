@@ -7,25 +7,25 @@
     <link rel="icon" type="image/png" href="My files/github.png"> <!--to add an icon in the tab---> 
     <style>
         @font-face {
-            font-family: 'Pacifico-Regular';
+            font-family: 'Pacifico';
             src: url('My files/Fonts/Pacifico-Regular.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
-            font-family: 'GreatVibes-Regular';
+            font-family: 'GreatVibes';
             src: url('My files/Fonts/GreatVibes-Regular.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
-            font-family: 'JosefinSans-VariableFont_wght';
-            src: url('My files/Fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+            font-family: 'JosefinSans';
+            src: url('My files/Fonts/static/JosefinSans-Bold.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
-            font-family: 'Lobster-Regular';
+            font-family: 'Lobster';
             src: url('My files/Fonts/Lobster-Regular.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
@@ -48,9 +48,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-family: 'Pacifico-Regular', sans-serif;
+            font-family: 'Pacifico', sans-serif;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 36px; /* Adjust the size as needed */
         }
         h2 {
             text-align: left;
@@ -58,18 +59,18 @@
             margin-top: 0;
         }
         h3 {
-            font-family: 'Pacifico-Regular', sans-serif;
+            font-family: 'JosefinSans', sans-serif;
             text-align: center;
             margin-bottom: 20px;
         }
         .tabs {
-            font-family: 'JosefinSans-VariableFont_wght', sans-serif;
+            font-family: 'JosefinSans', sans-serif;
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
         }
         .tabs a {
-            font-family: 'JosefinSans-VariableFont_wght', sans-serif;
+            font-family: 'JosefinSans', sans-serif;
             margin: 0 10px;
             padding: 10px 20px;
             background-color: #333;
@@ -121,7 +122,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Ahmad Alsharif | Portfolio</h1>
+        <h1>Ahmad Alsharif</h1>
+        <h3>Data Analytics Portfolio</h3>
 
         <div class="tabs">
             <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
