@@ -57,19 +57,19 @@ unique(crops$crop)
 cotton_yield <- subset(crops, crop == 'Cotton')
 cotton_yield
 # Rice
-rice_yield <- cotton_yield <- subset(crops, crop == 'Rice')
+rice_yield <- subset(crops, crop == 'Rice')
 rice_yield
 # Barley
-barley_yield <- cotton_yield <- subset(crops, crop == 'Barley')
+barley_yield <- subset(crops, crop == 'Barley')
 barley_yield
 # Soybean
-soybean_yield <- cotton_yield <- subset(crops, crop == 'Soybean')
+soybean_yield <- subset(crops, crop == 'Soybean')
 soybean_yield
 # Wheat
-wheat_yield <- cotton_yield <- subset(crops, crop == 'Wheat')
+wheat_yield <- subset(crops, crop == 'Wheat')
 wheat_yield
 # Maize
-maize_yield <- cotton_yield <- subset(crops, crop == 'Maize')
+maize_yield <- subset(crops, crop == 'Maize')
 maize_yield
 
 
