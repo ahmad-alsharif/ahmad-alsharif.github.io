@@ -83,33 +83,27 @@
             margin-bottom: 20px;
             font-size: 36px; /* Adjust the size as needed */
         }
-        .buttons {
+        .tabs {
+            font-family: 'SpaceMono', sans-serif;
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
         }
-        .button {
-            display: flex;
-            align-items: center;
+        .tabs a {
+            font-family: 'SpaceMono', sans-serif;
             margin: 0 10px;
             padding: 10px 20px;
             background-color: #333;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.3s;
         }
-        .button:hover {
+        .tabs a:hover {
             background-color: #555;
-            transform: scale(1.05);
         }
-        .button.active {
+        .tabs a.active {
             background-color: #007FAB;
-        }
-        .button svg {
-            margin-right: 8px; /* Space between icon and text */
         }
         .tab-content {
             display: none;
@@ -136,7 +130,7 @@
             .container {
                 padding: 10px;
             }
-            .button {
+            .tabs a {
                 padding: 8px 16px;
                 margin: 0 5px;
             }
@@ -151,7 +145,7 @@
         <h1>Ahmad Alsharif</h1>
         <h2>Data Analytics Portfolio</h2>
 
-        <div class="button">
+        <div class="tabs">
             <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
             <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a>
             <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
@@ -165,7 +159,7 @@
                 <a href="#powerbi" class="tab-link" onclick="showTab(event, 'powerbi')">Power Bi</a>
                 <!-- <a href="#tableau" class="tab-link" onclick="showTab(event, 'tableau')">Tableau</a> -->
             </div>
-            
+
             <section id="r" class="tab-content active">
                 <ul>
                     <li>
@@ -192,7 +186,7 @@
                     </li>
                 </ul>
             </section>
-            
+
            <!-- <section id="sql" class="tab-content">
                 <h1>Coming soon 🎉</h1>
                 <ul>
@@ -201,11 +195,11 @@
                     </li>
                 </ul>
             </section> -->
-            
+
             <!-- <section id="python" class="tab-content">
                <h1>Coming soon 🎉</h1>
             </section> -->
-            
+
             <section id="powerbi" class="tab-content">
                 <ul>
                     <li>
@@ -217,7 +211,7 @@
                     </li>
                 </ul>
             </section>
-            
+
             <!-- <section id="tableau" class="tab-content">
                 <h1>Coming soon 🎉</h1>
             </section> -->
