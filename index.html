@@ -1,301 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Alsharif | Data Analyst</title>
-    <link rel="icon" type="image/png" href="My files/man.png"> <!--to add an icon in the tab---> 
+    <meta name="description" content="Portfolio of [Your Name], showcasing data analysis projects and skills.">
+    <meta name="keywords" content="Portfolio, Data Analyst, Projects, HTML, CSS, JavaScript">
+    <meta property="og:title" content="[Your Name] Portfolio">
+    <meta property="og:description" content="Explore the data analysis projects by [Your Name].">
+    <meta property="og:image" content="path/to/thumbnail.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <title>[Your Name] Portfolio</title>
     <style>
-        @font-face {
-            font-family: 'Pacifico';
-            src: url('My files/Fonts/Pacifico-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'GreatVibes';
-            src: url('My files/Fonts/GreatVibes-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'JosefinSans';
-            src: url('My files/Fonts/JosefinSans-Bold.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Chivo';
-            src: url('My files/Fonts/Chivo-VariableFont_wght.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('My files/Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'SpaceMono';
-            src: url('My files/Fonts/SpaceMono-Bold.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Lora';
-            src: url('My files/Fonts/Lora-VariableFont_wght.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
         body {
-            font-family: 'Montserrat', sans-serif;
-            background-image: url('Backgrounds/water-explosion-abstract-99.jpg');
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
-            /*background-attachment: fixed;*/
-            color: #333;
             margin: 0;
-            padding: 0;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-family: 'Pacifico', sans-serif;
-            text-align: center;
-            margin-bottom: 5px;
-            font-size: 50px; /* Adjust the size as needed */
-        }
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 36px; /* Adjust the size as needed */
-        }
-        h3 {
-            font-family: 'GreatVibes', sans-serif;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 36px; /* Adjust the size as needed */
-        }
-        .tabs {
-            font-family: 'SpaceMono', sans-serif;
+
+        .nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            padding: 1rem;
+            z-index: 1000;
         }
-        .tabs a {
-            font-family: 'SpaceMono', sans-serif;
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
+
+        .nav a {
+            margin: 0 1rem;
             text-decoration: none;
-            border-radius: 50px;
-            transition: background-color 0.5s, transform 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: inline-block;
-            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
         }
-        .tabs a:hover {
-            background-color: #555;
-            transform: scale(1.05);
+
+        .nav a:hover {
+            color: #00bcd4;
         }
-        .tabs a.active {
-            background-color: #007FAB;
-        }
+
         .tab-content {
             display: none;
-            animation: fadeIn 0.5s;
+            padding: 2rem;
         }
+
         .tab-content.active {
             display: block;
+            animation: fadeIn 0.5s ease-in-out;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
+
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
-            margin-top: 10px;
+            display: block;
+            margin: 1rem 0;
         }
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-            .tabs a {
-                padding: 8px 16px;
-                margin: 0 5px;
-            }
+
+        .projects img {
+            border: 2px solid #00bcd4;
+            transition: transform 0.3s;
         }
-        strong {
-            color: #007FAB;
+
+        .projects img:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Ahmad Alsharif</h1>
-        <h2>Data Analytics Portfolio</h2>
+    <nav class="nav">
+        <a href="#about" onclick="showTab('about')">About Me</a>
+        <a href="#projects" onclick="showTab('projects')">Projects</a>
+        <a href="#resume" onclick="showTab('resume')">Resume</a>
+    </nav>
 
-        <div class="tabs">
-            <a href="#projects" class="tab-link active" onclick="showTab(event, 'projects')">Projects</a>
-            <!-- <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a> -->
-            <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
+    <div id="about" class="tab-content active">
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio! I am [Your Name], a passionate data analyst specializing in insightful data-driven solutions.</p>
+    </div>
+
+    <div id="projects" class="tab-content">
+        <h1>Projects</h1>
+        <div class="projects">
+            <img src="path/to/shark-attack-chart.jpg" alt="Shark Attack Power BI Dashboard Screenshot">
+            <p>Analysis of shark attack incidents using Power BI.</p>
+            <img src="path/to/ecommerce-graph.jpg" alt="E-Commerce Data Analysis Graph">
+            <p>Sales analysis of a global electronics retailer using SQL and Tableau.</p>
         </div>
+    </div>
 
-        <section id="projects" class="tab-content active">
-            <div class="tabs">
-                <a href="#crops" class="tab-link active" onclick="showTab(event, 'crops')">Crops Yield</a>
-                <!-- <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a> -->
-                <!-- <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a> -->
-                <a href="#sharks" class="tab-link" onclick="showTab(event, 'sharks')">Shark Attacks</a>
-                <!-- <a href="#tableau" class="tab-link" onclick="showTab(event, 'tableau')">Tableau</a> -->
-            </div>
-
-            <section id="crops" class="tab-content active">
-                <ul>
-                    <li>
-                        <strong>Agriculture Crops Yield | R </strong>
-                        <p>This project investigates the impact of rainfall and temperature on crop yield using R. By analyzing data on these environmental factors and their correlation with crop productivity, the study aims to identify optimal conditions for maximizing yields. The findings will provide actionable recommendations for farmers and suggest strategies for mitigating the effects of extreme weather conditions, contributing to more sustainable agricultural practices.</p>
-                        <p style="text-align: center;">ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
-                        <p>֎ Analysis outcome:</p>
-                        <p>» Total yield is strongly affected by rainfall (0.7680389).</p>
-                        <p>» The affect of temperature on total yield is minimal (0.08402748).</p>
-                        <p>» Harvesting days are not affected by rainfall (0.0003817865).</p>
-                        <p>» Harvesting days are not affected by temperature (0.005686612).</p>
-                        <p>» Optimal Rainfall amount for high yield: 154.5653 mm .</p>
-                        <p>» Optimal Temperature for high yield: 15 °C.</p>
-                        <p><a href="Projects/Agriculture Crops Yield (R)/crop_yield.csv">Dataset CSV file</a></p>
-                        <p><a href="Projects/Agriculture Crops Yield (R)/Agriculture Crop Yield Code.R">Complete project code: R Studio</a></p>
-                        <p><a href="Projects/Agriculture Crops Yield (R)/Agriculture Crops Yield (Jupyter Notebook).ipynb">Complete project code: Jupyter Notebook</a></p>
-                        <p style="text-align: center;">ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
-                        <img src="Projects/Agriculture Crops Yield (R)/plot/Rainfall vs. Yield for Each Crop.png" alt="Rainfall vs. Yield for Each Crop">
-                        <img src="Projects/Agriculture Crops Yield (R)/plot/Rainfall Vs. Total Yield (Effect of Fertilizer on Crops).png" alt="Rainfall Vs. Total Yield (Effect of Fertilizer on Crops)">
-                        <img src="Projects/Agriculture Crops Yield (R)/plot/Rainfall Vs. Total Yield (Effect of Irrigation on Crops).png" alt="Rainfall Vs. Total Yield (Effect of Irrigation on Crops)">
-                        <img src="Projects/Agriculture Crops Yield (R)/plot/Rainfall Vs. Residuals for Each Crop.png" alt="Rainfall Vs. Residuals for Each Crop">
-                        <img src="Projects/Agriculture Crops Yield (R)/plot/Prediction - Rainfall Vs. Predicted Yield.png" alt="Prediction - Rainfall Vs. Predicted Yield">
-                        <img src="Projects/Agriculture Crops Yield (R)/plot/Prediction - Temperature Vs. Predicted Yield.png" alt="Prediction - Temperature Vs. Predicted Yield">
-                    </li>
-                </ul>
-            </section>
-
-           <!-- <section id="sql" class="tab-content">
-                <h1>Coming soon 🎉</h1>
-                <ul>
-                    <li>
-                        <strong>Global Electronics Retailer | SQL</strong>
-                    </li>
-                </ul>
-            </section> -->
-
-            <!-- <section id="python" class="tab-content">
-               <h1>Coming soon 🎉</h1>
-            </section> -->
-
-            <section id="sharks" class="tab-content">
-                <ul>
-                    <li>
-                        <strong>Shark Attacks | Power BI</strong>
-                        <p>
-                            Shark attacks pose a significant concern for beachgoers, particularly surfers and swimmers. This project leverages a comprehensive dataset on global shark attacks to uncover patterns and trends. By examining variables such as location, fatality rate, and date, I aim to generate valuable insights that can help mitigate risks and enhance safety protocols for ocean enthusiasts.
-                        </p>
-                        <h3>Working on it ...</h3>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- <section id="tableau" class="tab-content">
-                <h1>Coming soon 🎉</h1>
-            </section> -->
-        </section> 
-
-        <section id="exercise-files" class="tab-content">
-            <ul>
-                <li>
-                    <strong>Exercise 1 | R</strong>
-                    <p>1. Creating a new data frames, subsetting the dataset.</p>
-                    <p>2. Grouping observations by class.</p>
-                    <p>3. Generating bar-charts reflecting the dataset grouping.</p>
-                    <p><a href="Exercise files/R/Exercise 1.ipynb">Excercise file</a></p>
-                </li>
-                <li>
-                    <strong>Exercise 2 | R</strong>
-                    <p>1. Manipulating column names.</p>
-                    <p>2. Generatating ggplot visualizations.</p>
-                    <p>3. Defining the linear regression model.</p>
-                    <p>4. Generating linear regression line in both plot() and ggplot().</p>
-                    <p>5. Finding the correlation between 2 variables.</p>
-                    <p><a href="Exercise files/R/Exercise 2.ipynb">Excercise file</a></p>
-                </li>
-                <li>
-                    <strong>Exercise 3 | R</strong>
-                    <p>1. Creating a new data frame by subsetting the dataset.</p>
-                    <p>2. Fitting a k-means clustering model.</p>
-                    <p>3. Finding the centroids.</p>
-                    <p>4. Generating a plot representing the K-Means.</p>
-                    <p><a href="Exercise files/R/Exercise 3.ipynb">Excercise file</a></p>
-                </li>
-                <!-- Add more exercise files as needed -->
-            </ul>
-        </section>
-
-        <section id="resume" class="tab-content">
-            <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
-            <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2">
-        </section>
+    <div id="resume" class="tab-content">
+        <h1>Resume</h1>
+        <p><a href="path/to/resume.pdf" target="_blank">Click here to view or download my resume</a>.</p>
     </div>
 
     <script>
-        function showTab(event, tabId) {
-            event.preventDefault();
-
-            // Determine if the clicked tab is a main tab or a nested tab
-            var isMainTab = event.currentTarget.closest('.tabs').parentElement.classList.contains('container');
-
-            if (isMainTab) {
-                // Handle main tabs
-                var mainTabs = document.querySelectorAll('.container > .tabs > .tab-link');
-                var mainContents = document.querySelectorAll('.container > .tab-content');
-
-                mainTabs.forEach(function(tab) {
-                    tab.classList.remove('active');
-                });
-
-                mainContents.forEach(function(content) {
-                    content.classList.remove('active');
-                });
-
-                document.querySelector('#' + tabId).classList.add('active');
-                event.currentTarget.classList.add('active');
-            } else {
-                // Handle nested tabs
-                var nestedTabs = event.currentTarget.closest('.tabs').querySelectorAll('.tab-link');
-                var nestedContents = event.currentTarget.closest('.tab-content').querySelectorAll('.tab-content');
-
-                nestedTabs.forEach(function(tab) {
-                    tab.classList.remove('active');
-                });
-
-                nestedContents.forEach(function(content) {
-                    content.classList.remove('active');
-                });
-
-                document.querySelector('#' + tabId).classList.add('active');
-                event.currentTarget.classList.add('active');
-            }
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
         }
     </script>
 </body>
+
 </html>
