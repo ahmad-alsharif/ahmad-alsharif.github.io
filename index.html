@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of [Your Name], showcasing data analysis projects and skills.">
-    <meta name="keywords" content="Portfolio, Data Analyst, Projects, HTML, CSS, JavaScript, SQL, PowerBi, Tableau, R, Python, Excel">
-    <meta property="og:title" content="[Your Name] Portfolio">
-    <meta property="og:description" content="Explore the data analysis projects by Ahmad Alsharif.">
-    <meta property="og:image" content="path/to/thumbnail.jpg">
     <title>Ahmad Alsharif | Data Analyst</title>
-    <link rel="icon" type="image/png" href="My files/man.png"> <!--to add an icon in the tab---> 
+    <link rel="icon" type="image/png" href="My files/man.png"> <!--to add an icon in the tab--> 
     <style>
         @font-face {
             font-family: 'Pacifico';
@@ -33,7 +28,7 @@
             font-family: 'Chivo';
             src: url('My files/Fonts/Chivo-VariableFont_wght.ttf') format('truetype');
             font-weight: normal;
-            font-style: normal;
+            font-style: normal.
         }
         @font-face {
             font-family: 'Montserrat';
@@ -114,6 +109,12 @@
         .tabs a.active {
             background-color: #007FAB;
         }
+        .tabs a.projects-tab {
+            background-color: #28a745; /* Green color for Projects tab */
+        }
+        .tabs a.projects-tab.active {
+            background-color: #218838; /* Darker green for active Projects tab */
+        }
         .tab-content {
             display: none;
             animation: fadeIn 0.5s;
@@ -152,44 +153,22 @@
 <body>
     <div class="container">
         <h1>Ahmad Alsharif</h1>
-        <h2>Portfolio</h2>
+        <h2>Data Analytics Portfolio</h2>
 
         <div class="tabs">
-            <a href="#about" class="tab-link active" onclick="showTab(event, 'about')">About me</a>
-            <a href="#projects" class="tab-link" onclick="showTab(event, 'projects')">Projects</a>
-            <!-- <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a> -->
-            <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
+            <a href="#projects" class="tab-link projects-tab active" onclick="showTab(event, 'projects')" aria-controls="projects" aria-selected="true">Projects</a>
+            <!-- <a href="#exercise-files" class="tab-link projects-tab" onclick="showTab(event, 'exercise-files')" aria-controls="exercise-files" aria-selected="false">Exercise Files</a> -->
+            <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')" aria-controls="resume" aria-selected="false">Resume</a>
         </div>
-        
-        <section id="about" class="tab-content active">
-                <ul>
-                        <p>Greetings! I'm Ahmad Alsharif, a data enthusiast with a Bachelor’s in Business Information Technology from Cape Breton University and currently pursuing a Post-Graduate Diploma in Data Analytics at SAIT. My expertise is in Data analysis, visualization, and data management.</p>
-                        <br>
-                        <strong>֎ Key Skills:</strong>
-                        <p>» Data Analysis</p>
-                        <p>» Data Visualization (Tableau and Power BI)</p>
-                        <p>» Advanced Excel</p>
-                        <p>» R Programming</p>
-                        <p>» SQL</p>
-                        <p>» Data Cleaning and Data Entry</p>
-                        <p>» Reporting and Dashboard Creation</p>
-                        <br>
-                        <strong>֎ Personality Traits:</strong>
-                        <p>» Analytical and Detail-Oriented</p>
-                        <p>» Strong Problem-Solving Skills</p>
-                        <p>» Effective Communication</p>
-                        <p>» Collaborative and Team-Oriented</p>
-                </ul>
-            </section>
-
-        <section id="projects" class="tab-content">
+        <section id="projects" class="tab-content active">
             <div class="tabs">
-                <a href="#crops" class="tab-link active" onclick="showTab(event, 'crops')">Crops Yield</a>
-                <!-- <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a> -->
-                <!-- <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a> -->
-                <a href="#sharks" class="tab-link" onclick="showTab(event, 'sharks')">Shark Attacks</a>
-                <!-- <a href="#tableau" class="tab-link" onclick="showTab(event, 'tableau')">Tableau</a> -->
+                <a href="#crops" class="tab-link projects-tab active" onclick="showTab(event, 'crops')" aria-controls="crops" aria-selected="true">Crops Yield</a>
+                <!-- <a href="#sql" class="tab-link projects-tab" onclick="showTab(event, 'sql')" aria-controls="sql" aria-selected="false">SQL</a> -->
+                <!-- <a href="#python" class="tab-link projects-tab" onclick="showTab(event, 'python')" aria-controls="python" aria-selected="false">Python</a> -->
+                <a href="#sharks" class="tab-link projects-tab" onclick="showTab(event, 'sharks')" aria-controls="sharks" aria-selected="false">Shark Attacks</a>
+                <!-- <a href="#tableau" class="tab-link projects-tab" onclick="showTab(event, 'tableau')" aria-controls="tableau" aria-selected="false">Tableau</a> -->
             </div>
+
             <section id="crops" class="tab-content active">
                 <ul>
                     <li>
@@ -201,7 +180,7 @@
                         <p>» The affect of temperature on total yield is minimal (0.08402748).</p>
                         <p>» Harvesting days are not affected by rainfall (0.0003817865).</p>
                         <p>» Harvesting days are not affected by temperature (0.005686612).</p>
-                        <p>» Optimal Rainfall amount for high yield: 154.5653 mm .</p>
+                        <p>» Optimal Rainfall amount for high yield: 154.5653 mm.</p>
                         <p>» Optimal Temperature for high yield: 15 °C.</p>
                         <p><a href="Projects/Agriculture Crops Yield (R)/crop_yield.csv">Dataset CSV file</a></p>
                         <p><a href="Projects/Agriculture Crops Yield (R)/Agriculture Crop Yield Code.R">Complete project code: R Studio</a></p>
@@ -254,16 +233,16 @@
                     <p>1. Creating a new data frames, subsetting the dataset.</p>
                     <p>2. Grouping observations by class.</p>
                     <p>3. Generating bar-charts reflecting the dataset grouping.</p>
-                    <p><a href="Exercise files/R/Exercise 1.ipynb">Excercise file</a></p>
+                    <p><a href="Exercise files/R/Exercise 1.ipynb">Exercise file</a></p>
                 </li>
                 <li>
                     <strong>Exercise 2 | R</strong>
                     <p>1. Manipulating column names.</p>
-                    <p>2. Generatating ggplot visualizations.</p>
+                    <p>2. Generating ggplot visualizations.</p>
                     <p>3. Defining the linear regression model.</p>
                     <p>4. Generating linear regression line in both plot() and ggplot().</p>
                     <p>5. Finding the correlation between 2 variables.</p>
-                    <p><a href="Exercise files/R/Exercise 2.ipynb">Excercise file</a></p>
+                    <p><a href="Exercise files/R/Exercise 2.ipynb">Exercise file</a></p>
                 </li>
                 <li>
                     <strong>Exercise 3 | R</strong>
@@ -271,12 +250,11 @@
                     <p>2. Fitting a k-means clustering model.</p>
                     <p>3. Finding the centroids.</p>
                     <p>4. Generating a plot representing the K-Means.</p>
-                    <p><a href="Exercise files/R/Exercise 3.ipynb">Excercise file</a></p>
+                    <p><a href="Exercise files/R/Exercise 3.ipynb">Exercise file</a></p>
                 </li>
                 <!-- Add more exercise files as needed -->
             </ul>
         </section>
-
         <section id="resume" class="tab-content">
             <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
             <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2">
@@ -287,40 +265,21 @@
         function showTab(event, tabId) {
             event.preventDefault();
 
-            // Determine if the clicked tab is a main tab or a nested tab
-            var isMainTab = event.currentTarget.closest('.tabs').parentElement.classList.contains('container');
+            var tabs = event.currentTarget.closest('.tabs').querySelectorAll('.tab-link');
+            var contents = event.currentTarget.closest('.container').querySelectorAll('.tab-content');
 
-            if (isMainTab) {
-                // Handle main tabs
-                var mainTabs = document.querySelectorAll('.container > .tabs > .tab-link');
-                var mainContents = document.querySelectorAll('.container > .tab-content');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
 
-                mainTabs.forEach(function(tab) {
-                    tab.classList.remove('active');
-                });
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
 
-                mainContents.forEach(function(content) {
-                    content.classList.remove('active');
-                });
-
-                document.querySelector('#' + tabId).classList.add('active');
-                event.currentTarget.classList.add('active');
-            } else {
-                // Handle nested tabs
-                var nestedTabs = event.currentTarget.closest('.tabs').querySelectorAll('.tab-link');
-                var nestedContents = event.currentTarget.closest('.tab-content').querySelectorAll('.tab-content');
-
-                nestedTabs.forEach(function(tab) {
-                    tab.classList.remove('active');
-                });
-
-                nestedContents.forEach(function(content) {
-                    content.classList.remove('active');
-                });
-
-                document.querySelector('#' + tabId).classList.add('active');
-                event.currentTarget.classList.add('active');
-            }
+            document.querySelector('#' + tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+            event.currentTarget.setAttribute('aria-selected', 'true');
         }
     </script>
 </body>
