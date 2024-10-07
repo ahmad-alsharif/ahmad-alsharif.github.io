@@ -162,6 +162,8 @@
             <a href="#projects" class="tab-link red-tab" onclick="showTab(event, 'projects')">Projects</a>
             <!-- <a href="#exercise-files" class="tab-link" onclick="showTab(event, 'exercise-files')">Exercise Files</a> -->
             <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
+            <!-- <a href="#testimonials" class="tab-link" onclick="showTab(event, 'testimonials')">Testimonials</a> -->
+            <!-- <a href="#contact" class="tab-link" onclick="showTab(event, 'contact')">Contact</a> -->
         </div>
         
         <section id="about" class="tab-content active">
@@ -293,6 +295,33 @@
         <section id="resume" class="tab-content">
             <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
             <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2">
+        </section>
+
+        <section id="testimonials" class="tab-content">
+            <h3>Testimonials</h3>
+            <div class="testimonial">
+                <p>"Ahmad is a highly skilled data analyst who consistently delivers exceptional results. His attention to detail and analytical skills are top-notch." - <strong>John Doe, Manager at XYZ Corp</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Working with Ahmad has been a pleasure. His ability to turn complex data into actionable insights is impressive." - <strong>Jane Smith, Data Scientist at ABC Inc</strong></p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h3>Contact Me</h3>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
         </section>
     </div>
 
