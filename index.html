@@ -114,9 +114,22 @@
         .tabs a.active {
             background-color: #007FAB;
         }
+        /*.tabs a.red-tab.active {
+            background-color: #7B2ADE; /* Red color for Projects tab Purple:#7B2ADE & Red: #D24C36 
+            border-radius: 5px;  .nested-tabs a */
+        }
         .tabs a.red-tab.active {
-            background-color: #7B2ADE; /* Red color for Projects tab Purple:#7B2ADE & Red: #D24C36 */
-            border-radius: 5px;
+            font-family: 'SpaceMono', sans-serif;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #7B2ADE;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0; /* Square edges for nested tabs */
+            transition: background-color 0.5s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            text-align: center;
         }
         .tab-content {
             display: none;
