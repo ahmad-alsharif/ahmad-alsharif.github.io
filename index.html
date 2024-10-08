@@ -114,12 +114,11 @@
         .tabs a.active {
             background-color: #007FAB;
         }
-       .tabs a.red-tab.active {
-            background-color: #7B2ADE; /* Purple:#7B2ADE & Red: #D24C36 */
+       .tabs a.nested.active {
+            background-color: #D24C36; /* Purple:#7B2ADE & Red: #D24C36 */
             border-radius: 5px;
         }
-        .tabs a.red-tab {
-            /* background-color: #7B2ADE; Purple:#7B2ADE & Red: #D24C36 */
+        .tabs a.nested {
             border-radius: 5px;
         }
         .tab-content {
@@ -204,10 +203,10 @@
 
         <section id="projects" class="tab-content">
             <div class="tabs">
-                <a href="#crops" class="tab-link red-tab active" onclick="showTab(event, 'crops')">Crops Yield</a>
+                <a href="#crops" class="tab-link nested active" onclick="showTab(event, 'crops')">Crops Yield</a>
                 <!-- <a href="#sql" class="tab-link" onclick="showTab(event, 'sql')">SQL</a> -->
                 <!-- <a href="#python" class="tab-link" onclick="showTab(event, 'python')">Python</a> -->
-                <a href="#sharks" class="tab-link red-tab" onclick="showTab(event, 'sharks')">Shark Attacks</a>
+                <a href="#sharks" class="tab-link nested" onclick="showTab(event, 'sharks')">Shark Attacks</a>
                 <!-- <a href="#tableau" class="tab-link" onclick="showTab(event, 'tableau')">Tableau</a> -->
             </div>
             <section id="crops" class="tab-content active">
