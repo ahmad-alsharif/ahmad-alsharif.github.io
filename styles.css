@@ -102,13 +102,13 @@
             background-color: #007FAB;
         }
        .tabs a.nested.active {
-            background: linear-gradient(to bottom, #007FAB, #D24C36); /* Gradient from purple to red, top to bottom */
+            background: linear-gradient(to bottom, #007FAB, #884d19); /* Gradient from purple to red, top to bottom */
             /*border-radius: 5px;*/
         }
         .tabs a.nested {
-            /*background-color: #65241a;*/
+            background-color: #884d19;
             border-radius: 5px;
-            animation: pulse 4s infinite;
+            animation: pulse 5s infinite;
         }
         .tab-content {
             display: none;
