@@ -121,11 +121,11 @@
         }
         .tabs a.nested {
             background-color: #884d19;
-            border-radius: 10px;
+            border-radius: 5px;
             animation: pulse 8s infinite;
         }
         .tabs a.nested:hover {
-            background-color: #555;
+            background-color: #6f3a0c;
             transform: scale(1.05);
         }
         .tab-content {
