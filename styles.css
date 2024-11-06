@@ -104,7 +104,7 @@
         .tab-link {
             /*flex: 1 1 50%;  Each tab takes up 50% of the row */
             text-align: center; /* Center the text within each tab */
-            padding: 20px;
+            padding: 10px;
             box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         .tabs a:hover {
@@ -115,16 +115,17 @@
             background-color: #007FAB;
         }
        .tabs a.nested.active {
-            background: linear-gradient(to top, #060606, #884d19); /* Gradient from purple to red, top to bottom */
+            background-color: #007FAB;
+            /*background: linear-gradient(to top, #060606, #884d19); /* Gradient from purple to red, top to bottom */
             border-radius: 5px;
         }
         .tabs a.nested {
-            background-color: #007FAB;
+            background-color: #884d19;
             border-radius: 10px;
-            animation: pulse 5s infinite;
+            animation: pulse 8s infinite;
         }
         .tabs a.nested:hover {
-            background-color: #884d19;
+            background-color: #555;
             transform: scale(1.05);
         }
         .tab-content {
