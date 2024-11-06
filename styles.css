@@ -104,7 +104,7 @@
         .tab-link {
             /*flex: 1 1 50%;  Each tab takes up 50% of the row */
             text-align: center; /* Center the text within each tab */
-            padding: 10px;
+            padding: 20px;
             box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         .tabs a:hover {
