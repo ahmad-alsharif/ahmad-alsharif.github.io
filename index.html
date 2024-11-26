@@ -9,8 +9,183 @@
     <meta property="og:description" content="Explore the data analysis projects by Ahmad Alsharif.">
     <meta property="og:image" content="My files/man.png">
     <title>Ahmad Alsharif's Portfolio</title>
-    <link rel="icon" type="image/png" href="My files/man.png"> <!--to add an icon in the tab---> 
-    <link rel="stylesheet" href="styles.css"> <!-- Add a second html file for CSS -->
+    <link rel="icon" type="image/png" href="My files/man.png">
+<style>
+            @font-face {
+            font-family: 'GreatVibes';
+            src: url('My files/Fonts/GreatVibes-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'JosefinSans';
+            src: url('My files/Fonts/JosefinSans-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('My files/Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SpaceMono';
+            src: url('My files/Fonts/SpaceMono-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('Backgrounds/3.jpg');
+            background-size: cover;
+            /*background-attachment: fixed;*/
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-family: 'JosefinSans', sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 60px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        h3 {
+            font-family: 'GreatVibes', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        .tabs {
+            font-family: 'SpaceMono', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tabs a {
+            font-family: 'SpaceMono', sans-serif;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.5s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            text-align: center;
+        }
+        .tab-link {
+            /*flex: 1 1 50%;  Each tab takes up 50% of the row */
+            text-align: center; /* Center the text within each tab */
+            padding: 10px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .tabs a:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        .tabs a.active {
+            background-color: #007FAB;
+        }
+       .tabs a.nested.active {
+            background-color: #007FAB;
+            /*background: linear-gradient(to top, #060606, #884d19); /* Gradient from purple to red, top to bottom */
+            border-radius: 5px;
+        }
+        .tabs a.nested {
+            background-color: #884d19;
+            border-radius: 5px;
+            animation: pulse 8s infinite;
+        }
+        .tabs a.nested:hover {
+            background-color: #6f3a0c;
+            transform: scale(1.05);
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 1s;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+            }
+            50% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.9);
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes wiggle {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .tabs a {
+                padding: 8px 16px;
+                margin: 0 5px;
+            }
+        }
+        strong {
+            color: #007FAB;
+        }
+        footer {
+            text-align: center; /* Center-aligns the text */
+            font-weight: bold; /* Makes the text bold */
+        }
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -23,8 +198,6 @@
             <a href="#projects" class="tab-link" onclick="showTab(event, 'projects')">Projects</a>
             <a href="#resume" class="tab-link" onclick="showTab(event, 'resume')">Resume</a>
             <a href="#certificate" class="tab-link" onclick="showTab(event, 'certificate')">Certificates</a>
-            <!-- <a href="#testimonials" class="tab-link" onclick="showTab(event, 'testimonials')">Testimonials</a> -->
-            <!-- <a href="#contact" class="tab-link" onclick="showTab(event, 'contact')">Contact</a> -->
         </div>
         
         <section id="about" class="tab-content active">
@@ -34,27 +207,14 @@
                     <p>I specialize in data analysis, visualization, ETL (Extract, Transform, and Load), and programming languages like SQL, R, and Python. My career and continual learning has equipped me with diverse skills in managing data, creating reports, and developing dashboards to support strategic business decisions. Additionally, my experience in account management and operations has honed my ability to optimize processes and manage client relationships effectively.</p>
                     <p>I am committed to continuous improvement and excellence, approaching each challenge with critical thinking, attention to detail, and a passion for problem-solving. My adaptability and communication skills ensure successful collaboration with diverse teams and stakeholders.</p>
                     <br>
-                    <strong>֎ Technical Skills:</strong>
+                    <p> <b>֎ Skills:</b> </b>
+                    <p>» Data Analysis with Excel, R, and Python</p>
+                    <p>» Database Management using SQL</p>
+                    <p>» Data ETL using Power Query</p>
                     <p>» Data Modeling</p>
-                    <p>» Data Normalization and Denormalization</p>
-                    <p>» Data Cleaning and Entry</p>
-                    <p>» ETL (Extract, Transform, Load) data</p>
-                    <p>» Python</p>
-                    <p>» R</p>
-                    <p>» SQL</p>
-                    <p>» Visualization (Tableau and Power BI)</p>
-                    <p>» Reporting and Dashboard</p>
-                    <p>» Advanced Microsoft Office Suite (Excel, Power Point, Access, and Word)</p>
-                    <br>
-                    <strong>֎ Soft Skills:</strong>
-                    <p>» Critical Thinking and Analytical Skills</p>
-                    <p>» Attention to Details</p>
-                    <p>» Strong Problem-Solving Skills</p>
-                    <p>» Effective Communication and Presentation</p>
-                    <p>» Collaborative and Team-Oriented</p>
-                    <p>» Time Management</p>
-                    <p>» Problem-Solving</p>
-                    <p>» Adaptability and Flexibility</p>
+                    <p>» Created my Portfolio Site with HTML and CSS</p>
+                    <p>» Data Visualization with Power BI and Tableau </p>
+                    <p>» Predictive analysis</p>
                 </ul>
         </section>
 
@@ -66,11 +226,9 @@
             </div>
             <section id="crops" class="tab-content active">
                 <ul>
-                   <!-- <li> -->
                         <img src="Projects/Agriculture Crops Yield (R)/Agriculture.png" alt="Agriculture Crops Yield" style="display: inline-block;" width="760" height="200">
                         <br><strong>Agriculture Crops Yield - Data Extraction | R | Predictive Analysis | Data Visualization (ggplot2)</strong>
                         <p>This project investigates the impact of rainfall and temperature on crop yield using R. By analyzing data on these environmental factors and their correlation with crop productivity, the study aims to identify optimal conditions for maximizing yields. The findings will provide actionable recommendations for farmers and suggest strategies for mitigating the effects of extreme weather conditions, contributing to more sustainable agricultural practices.</p>
-                        <p style="text-align: center;">ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
                         <img src="Projects/Agriculture Crops Yield (R)/plot/Rainfall vs. Yield for Each Crop.png" alt="Rainfall vs. Yield for Each Crop">
                         <p><b>֎ Analysis outcome:</b></p>
                         <p>» Total yield is strongly affected by rainfall (0.7680389).</p>
@@ -79,14 +237,11 @@
                         <p>» Harvesting days are not affected by temperature (0.005686612).</p>
                         <p>» Optimal Rainfall amount for high yield: 154.5653 mm .</p>
                         <p>» Optimal Temperature for high yield: 15 °C.</p>
-                        <p style="text-align: center;">ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
                         <img src="Projects/Agriculture Crops Yield (R)/plot/Rainfall Vs. Total Yield (Effect of Fertilizer on Crops).png" alt="Rainfall Vs. Total Yield (Effect of Fertilizer on Crops)">
                         <img src="Projects/Agriculture Crops Yield (R)/plot/Rainfall Vs. Total Yield (Effect of Irrigation on Crops).png" alt="Rainfall Vs. Total Yield (Effect of Irrigation on Crops)">
-                        <p style="text-align: center;">ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
                         <p><a href="Projects/Agriculture Crops Yield (R)/crop_yield.csv">Dataset CSV file</a></p>
                         <p><a href="Projects/Agriculture Crops Yield (R)/Agriculture Crop Yield Code.R">Complete project code: R Studio</a></p>
                         <p><a href="Projects/Agriculture Crops Yield (R)/Agriculture Crops Yield (Jupyter Notebook).ipynb">Complete project code: Jupyter Notebook</a></p>
-                    <!-- </li> -->
                 </ul>
             </section>
 
@@ -94,10 +249,8 @@
                 <ul>
                     <img src="Projects/Global Electronics Retailer (SQL)/retailer.png" alt="Global Electronics Retailer" style="display: inline-block;" width="760" height="200">
                     <br><strong>Global Electronics Retailer - Business Analysis | SQL | Data Cleaning | Data Visualization</strong>
-                    <p>
-                        In response to the ongoing sea freight logistical challenges and political tensions in the manufacturing country, the Global Electronic Retailer is proactively seeking to expand its inventory for North American customers. This strategic initiative aims to ensure a consistent supply of products, enhancing customer satisfaction and maintaining market competitiveness.
-                    </p>
-                    <p style="text-align: center;">ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
+                    <p>In response to the ongoing sea freight logistical challenges and political tensions in the manufacturing country, the Global Electronic Retailer is proactively seeking to expand its inventory for North American customers. This strategic initiative aims to ensure a consistent supply of products, enhancing customer satisfaction and maintaining market competitiveness.</p>
+                    <br>
                     <p><b>֎ Strategic Considerations:</b> </p>
                     <p>» Should we restock products with highest sales or highest profit margin?</p>
                     <p>» What are the top 5 products we need to order in a large quantity?</p>
@@ -113,7 +266,7 @@
                     <p>» Feasibility: Restocking products with the highest sales is more feasible due to lower costs and shorter lead times.</p>
                     <p>» Risk: Restocking high-sales products carries lower risk due to established demand and manageable supply chain timelines.</p>
                     <p>» Benefits: While restocking high-margin products offers higher profitability per unit, restocking high-sales products ensures steady revenue and customer satisfaction.</p>
-                    <p style="text-align: center;">ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ</p>
+                    <br>
                     <p><a href="https://maven-datasets.s3.amazonaws.com/Global+Electronics+Retailer/Global+Electronics+Retailer.zip">Original Dataset</a></p>
                     <p><a href="Projects/Global Electronics Retailer (SQL)/SQL Code.sql">Data Extraction SQL Query</a></p>
                     <p><a href="Projects/Global Electronics Retailer (SQL)/SQL Extracted data - ORIGINAL.xlsx">Original Extracted Datasheet</a></p>
@@ -123,7 +276,6 @@
 
             <section id="sharks" class="tab-content">
                 <ul>
-                    <!-- <li> -->
                         <img src="Projects/Shark Attacks (Power Bi)/shark 2.png" alt="Shark Attacks" style="display: inline-block;" width="760" height="200">
                         <br><strong>Shark Attacks - Data Cleaning | Data Transformation | SQL | Data Visualization (Power BI)</strong>
                         <p>
@@ -131,7 +283,6 @@
                         </p>
                         <h3>Working on it ...</h3>
                         <iframe title="SharkAttacks - PowerBI" width="760" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMTc0MTg1MTAtOWUwNy00NDQ3LTkyZWItMGUxOGUzMmYyYjg0IiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-                    <!-- </li> -->
                 </ul>
             </section>
         </section> 
@@ -139,8 +290,6 @@
         <section id="resume" class="tab-content">
             <div style="text-align: center;">
                 <iframe src="My files/Ahmad Alsharif - Resume.pdf#zoom=95" width="800" height="2100"></iframe>
-                <!-- <img src="My files/Ahmad Alsharif - Resume_Page1.png" alt="Resume Image 1">
-                <img src="My files/Ahmad Alsharif - Resume_Page2.png" alt="Resume Image 2"> -->
             </div>
         </section>
 
@@ -149,33 +298,6 @@
                 <iframe src="My files/Certificates.pdf" width="800" height="5700"></iframe>
             </div>
         </section>
-
-        <!-- <section id="testimonials" class="tab-content">
-            <h3>Testimonials</h3>
-            <div class="testimonial">
-                <p>"Ahmad is a highly skilled data analyst who consistently delivers exceptional results. His attention to detail and analytical skills are top-notch." - <strong>John Doe, Manager at XYZ Corp</strong></p>
-            </div>
-            <div class="testimonial">
-                <p>"Working with Ahmad has been a pleasure. His ability to turn complex data into actionable insights is impressive." - <strong>Jane Smith, Data Scientist at ABC Inc</strong></p>
-            </div>
-            <!-- Add more testimonials as needed
-        </section> -->
-
-        <!-- <section id="contact" class="tab-content">
-            <h3>Contact Me</h3>
-            <form action="https://formspree.io/f/{your_form_id}" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section> -->
         
         <footer>
             <br>
@@ -187,11 +309,9 @@
         function showTab(event, tabId) {
             event.preventDefault();
 
-            // Determine if the clicked tab is a main tab or a nested tab
             var isMainTab = event.currentTarget.closest('.tabs').parentElement.classList.contains('container');
 
             if (isMainTab) {
-                // Handle main tabs
                 var mainTabs = document.querySelectorAll('.container > .tabs > .tab-link');
                 var mainContents = document.querySelectorAll('.container > .tab-content');
 
@@ -206,7 +326,6 @@
                 document.querySelector('#' + tabId).classList.add('active');
                 event.currentTarget.classList.add('active');
             } else {
-                // Handle nested tabs
                 var nestedTabs = event.currentTarget.closest('.tabs').querySelectorAll('.tab-link');
                 var nestedContents = event.currentTarget.closest('.tab-content').querySelectorAll('.tab-content');
 
