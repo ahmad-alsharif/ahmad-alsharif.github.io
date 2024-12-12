@@ -32,7 +32,24 @@ In response to the ongoing sea freight logistical challenges and political tensi
 ♦ *Benefits: While restocking high-margin products offers higher profitability per unit, restocking high-sales products ensures steady revenue and customer satisfaction.* <br>
 
 
-### 3. Shark Attacks (Power BI):
+### 3. Student Mental Health (Power BI):
 #### - [Project Dataset]()
 
-Shark attacks pose a significant concern for beachgoers, particularly surfers and swimmers. This project leverages a comprehensive dataset on global shark attacks to uncover patterns and trends. By examining variables such as location, fatality rate, and date, I aim to generate valuable insights that can help mitigate risks and enhance safety protocols for ocean enthusiasts.
+This dataset offers a detailed look into student demographics, well-being, and academic success. It includes key details like gender, and age, as well as academic factors such as degree level, major, academic year, and CGPA.
+
+It also covers residential status, highlighting the impact of living on or off-campus, and personal experiences with discrimination, harassment, or bullying. These insights are crucial for understanding mental health challenges and academic outcomes.
+
+Lifestyle factors like physical activity and sleep patterns are included, along with students' satisfaction with their studies and perceived academic pressure. This helps gauge overall happiness and engagement.
+The dataset addresses major stressors like academic pressure, financial concerns, and social relationships, all of which affect mental health and academic performance. It also tracks mental health indicators such as depression, anxiety, and feelings of isolation, providing valuable data for identifying trends and areas for intervention.
+
+Overall, this dataset is a rich resource for improving student support services, mental health resources, and creating a healthier, more inclusive campus environment.
+
+#### ֎ Research Findings:
+♦ *There is a positive correlation between CGPA and average sleep duration. Students with higher CGPAs tend to get more sleep on average.* <br>
+♦ *Students engaged in sports generally report lower academic pressure and depression levels compared to those who do not participate in sports.* <br>
+♦ *There is a positive correlation between study satisfaction and academic workload. Higher academic workloads are associated with higher study satisfaction.* <br>
+♦ *Online entertainment and Religious activities are associated with higher isolation levels and lower Anxiety levels* <br>
+♦ *Financial concerns are relatively consistent across different degree majors, with no significant variation observed.* <br>
+♦ *Depression and anxiety levels tend to increase as students progress to higher academic years.* <br>
+♦ *Females are more likely to engage in religious activities and social connections, while males prefer Religious activities, and online entertainment.* <br>
+♦ *Students engaged in sports generally report lower academic pressure and depression levels compared to those who do not participate in sports.* <br>
