@@ -1,0 +1,88 @@
+gender,age,degree_level,degree_major,academic_year,cgpa,residential_status,campus_discrimination,sports_engagement,average_sleep,study_satisfaction,academic_workload,academic_pressure,financial_concerns,social_relationships,depression,anxiety,isolation,future_insecurity,stress_relief_activities
+Female,17,Undergraduate,Computer Science,1st year,3.5-4.0,On-Campus,No,No Sports,4-6 hrs,High,Very High,Very High,Very High,Very Low,Very High,Very High,Very High,Moderate,Sleep
+Female,17,Undergraduate,Computer Science,1st year,3.5-4.0,On-Campus,No,No Sports,4-6 hrs,High,High,High,Very High,Moderate,High,High,Very High,Low,Religious Activities
+Male,17,Undergraduate,Information Technology,1st year,0.0-0.0,Off-Campus,No,7+ times,7-8 hrs,Moderate,Very High,Very High,Very Low,Moderate,High,High,High,Very High,Outdoor Activities
+Male,18,Undergraduate,Data Science,1st year,2.5-3.0,Off-Campus,No,4-6 times,4-6 hrs,High,Moderate,High,High,High,Moderate,High,High,Low,"Sports and Fitness, Creative Outlets, Online Entertainment, Outdoor Activities"
+Male,18,Undergraduate,Data Science,1st year,3.5-4.0,Off-Campus,No,No Sports,7-8 hrs,Very High,Moderate,Very Low,Very Low,Moderate,Very Low,Low,Low,Very Low,Sleep
+Male,18,Undergraduate,Data Science,1st year,1.5-2.0,On-Campus,No,No Sports,4-6 hrs,Very High,High,Very High,Low,Moderate,High,Moderate,High,High,Religious Activities
+Male,18,Undergraduate,Computer Science,1st year,3.5-4.0,Off-Campus,No,7+ times,4-6 hrs,Moderate,Moderate,High,Very High,Low,High,Moderate,High,Very High,"Religious Activities, Sports and Fitness, Social Connections"
+Female,18,Undergraduate,Data Science,1st year,2.5-3.0,Off-Campus,No,No Sports,4-6 hrs,Very Low,High,Very High,Very High,Low,Very High,Very High,Very High,Very High,Creative Outlets
+Male,18,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,No,No Sports,7-8 hrs,Low,High,High,Very High,Very Low,Very High,High,Very High,Very High,Online Entertainment
+Male,18,Undergraduate,Data Science,1st year,3.5-4.0,Off-Campus,Yes,1-3 times,4-6 hrs,High,Moderate,Moderate,Low,Moderate,Moderate,Moderate,Moderate,High,Online Entertainment
+Male,18,Undergraduate,Computer Science,1st year,3.5-4.0,Off-Campus,Yes,4-6 times,7-8 hrs,High,Low,Low,Very Low,Moderate,Very Low,Very Low,Low,Moderate,Online Entertainment
+Male,18,Undergraduate,Data Science,1st year,0.0-0.0,Off-Campus,No,7+ times,7-8 hrs,High,High,High,High,Very High,Moderate,Moderate,Very Low,Moderate,Sports and Fitness
+Male,18,Undergraduate,Information Technology,1st year,0.0-0.0,Off-Campus,No,7+ times,7-8 hrs,Very High,Moderate,High,Moderate,Very High,Moderate,Moderate,Moderate,Very Low,"Religious Activities, Sports and Fitness, Social Connections"
+Male,18,Undergraduate,Information Technology,1st year,0.0-0.0,Off-Campus,No,1-3 times,4-6 hrs,Very High,Very High,Moderate,Low,Very Low,Low,High,Very High,Low,"Social Connections, Online Entertainment, Sleep"
+Male,19,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,No,No Sports,4-6 hrs,Moderate,Moderate,High,Very High,Moderate,Very High,High,Very High,Very Low,Religious Activities
+Female,19,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,Yes,No Sports,7-8 hrs,Very High,Moderate,Moderate,High,Moderate,Very Low,Very Low,Very Low,Moderate,"Religious Activities, Social Connections, Online Entertainment"
+Male,19,Undergraduate,Data Science,1st year,2.5-3.0,Off-Campus,No,No Sports,7-8 hrs,Very High,Moderate,Very High,Moderate,Moderate,Low,Low,Moderate,Very Low,Religious Activities
+Female,19,Undergraduate,Data Science,1st year,3.5-4.0,Off-Campus,No,1-3 times,4-6 hrs,High,High,Moderate,Moderate,Low,High,High,Moderate,Low,"Religious Activities, Creative Outlets, Social Connections"
+Male,19,Undergraduate,Data Science,1st year,3.5-4.0,Off-Campus,Yes,1-3 times,4-6 hrs,Very High,High,High,Very High,Moderate,Very High,Very High,High,Moderate,Sports and Fitness
+Female,19,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,Yes,No Sports,4-6 hrs,High,Very High,Very High,Low,Low,High,High,Very High,Very High,"Religious Activities, Social Connections"
+Female,19,Undergraduate,Data Science,1st year,3.5-4.0,Off-Campus,No,1-3 times,4-6 hrs,Very High,High,High,Very Low,Moderate,Moderate,High,Moderate,Moderate,"Religious Activities, Creative Outlets"
+Male,19,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,No,7+ times,4-6 hrs,Very High,Very High,Moderate,Very High,Very High,High,Very Low,Moderate,Low,"Religious Activities, Sports and Fitness, Social Connections, Online Entertainment, Outdoor Activities"
+Male,19,Undergraduate,Data Science,1st year,2.0-2.5,On-Campus,No,No Sports,4-6 hrs,Low,High,Very Low,Very High,Moderate,Moderate,Moderate,Moderate,Low,"Creative Outlets, Social Connections, Online Entertainment, Outdoor Activities"
+Female,19,Undergraduate,Data Science,1st year,3.0-3.5,On-Campus,No,No Sports,7-8 hrs,Very High,High,High,Moderate,Low,High,Low,Moderate,Very Low,Creative Outlets
+Female,19,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,No,4-6 times,7-8 hrs,Very High,Moderate,Low,Low,High,Very Low,Low,Very Low,Very Low,Religious Activities
+Female,19,Undergraduate,Data Science,2nd year,2.5-3.0,On-Campus,No,No Sports,2-4 hrs,Low,High,High,Very Low,Low,Moderate,Moderate,High,Moderate,Religious Activities
+Female,19,Undergraduate,Data Science,2nd year,2.5-3.0,Off-Campus,No,1-3 times,4-6 hrs,High,High,High,High,Very Low,Very Low,Very Low,Very Low,High,"Religious Activities, Social Connections, Online Entertainment"
+Male,19,Undergraduate,Computer Science,3rd year,3.5-4.0,On-Campus,No,1-3 times,7-8 hrs,High,High,High,Moderate,High,Low,Low,Low,High,"Religious Activities, Online Entertainment, Outdoor Activities"
+Male,19,Undergraduate,Computer Science,1st year,2.0-2.5,On-Campus,No,1-3 times,4-6 hrs,Very High,High,Very High,Very High,Very Low,Moderate,High,Very High,Very Low,"Sports and Fitness, Creative Outlets, Social Connections, Outdoor Activities, Sleep"
+Female,19,Undergraduate,Computer Science,2nd year,3.0-3.5,Off-Campus,No,No Sports,7-8 hrs,High,Moderate,Moderate,Moderate,Moderate,High,High,Moderate,Low,"Religious Activities, Social Connections, Sleep"
+Male,19,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,Yes,4-6 times,7-8 hrs,Moderate,Low,High,High,High,Very Low,Very Low,Moderate,Moderate,Outdoor Activities
+Female,19,Undergraduate,Computer Science,3rd year,3.0-3.5,On-Campus,No,No Sports,4-6 hrs,Moderate,Very High,Very High,Moderate,Moderate,Very High,Very High,Moderate,Very High,Sleep
+Female,19,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,Yes,No Sports,4-6 hrs,Moderate,Very High,Very High,Very High,Moderate,High,Moderate,Moderate,High,"Social Connections, Sleep"
+Female,19,Undergraduate,Data Science,2nd year,3.5-4.0,On-Campus,No,4-6 times,4-6 hrs,High,High,High,Moderate,High,Low,Low,Very Low,Moderate,Sports and Fitness
+Male,20,Undergraduate,Data Science,2nd year,3.0-3.5,Off-Campus,No,No Sports,4-6 hrs,Very High,High,Very High,High,Moderate,Low,Very Low,Very Low,Low,"Religious Activities, Social Connections, Online Entertainment"
+Male,20,Postgraduate,Computer Science,3rd year,3.0-3.5,Off-Campus,No,1-3 times,4-6 hrs,Very High,High,High,Very Low,Moderate,Moderate,Moderate,Moderate,High,Online Entertainment
+Male,20,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,No,1-3 times,2-4 hrs,Very High,Very High,Very High,Moderate,High,Low,Moderate,Moderate,Very Low,"Religious Activities, Sports and Fitness, Online Entertainment"
+Male,20,Undergraduate,Computer Science,3rd year,2.5-3.0,On-Campus,No,No Sports,4-6 hrs,Moderate,Very High,High,High,Very Low,Very High,Very High,Very High,Moderate,Online Entertainment
+Female,20,Undergraduate,Computer Science,3rd year,3.0-3.5,Off-Campus,Yes,No Sports,4-6 hrs,Moderate,Very High,Very High,Low,Moderate,Very High,Very High,High,High,Online Entertainment
+Female,20,Undergraduate,Computer Science,3rd year,3.0-3.5,Off-Campus,No,No Sports,4-6 hrs,High,Very High,Very High,Moderate,Moderate,Very High,Very High,Very High,Very High,"Religious Activities, Social Connections, Online Entertainment"
+Male,20,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,Yes,1-3 times,4-6 hrs,Moderate,High,Moderate,High,Low,Moderate,High,Moderate,Very High,"Religious Activities, Social Connections, Online Entertainment, Outdoor Activities"
+Male,20,Undergraduate,Computer Science,2nd year,3.0-3.5,On-Campus,No,No Sports,4-6 hrs,Very High,High,High,Very Low,High,Moderate,Moderate,Very Low,Moderate,"Religious Activities, Online Entertainment"
+Male,20,Undergraduate,Computer Science,3rd year,3.0-3.5,Off-Campus,No,1-3 times,4-6 hrs,High,Very High,High,High,High,Low,Moderate,Very Low,Low,"Religious Activities, Sports and Fitness, Social Connections, Online Entertainment, Outdoor Activities"
+Female,20,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,No,No Sports,4-6 hrs,Moderate,Moderate,Moderate,Moderate,Low,High,Moderate,Very High,Moderate,Religious Activities
+Female,20,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,No,No Sports,2-4 hrs,Very High,High,High,Moderate,Very Low,Moderate,Low,Moderate,Very Low,Social Connections
+Female,20,Undergraduate,Data Science,1st year,3.0-3.5,Off-Campus,No,1-3 times,7-8 hrs,Very High,High,High,Low,Moderate,Very Low,Low,Low,Low,Social Connections
+Male,20,Undergraduate,Data Science,2nd year,2.5-3.0,Off-Campus,No,No Sports,4-6 hrs,Moderate,Very High,Very High,Moderate,Moderate,High,High,Moderate,High,Outdoor Activities
+Male,20,Undergraduate,Computer Science,3rd year,3.5-4.0,Off-Campus,No,1-3 times,4-6 hrs,Very High,Very High,High,Very High,Moderate,Very High,Very High,Very High,Moderate,"Religious Activities, Online Entertainment"
+Male,20,Undergraduate,Computer Science,1st year,1.5-2.0,Off-Campus,Yes,7+ times,2-4 hrs,Very Low,High,Very High,Very High,Very Low,Very High,Very High,Very High,Very High,Online Entertainment
+Male,20,Undergraduate,Data Science,1st year,3.5-4.0,Off-Campus,No,4-6 times,7-8 hrs,Very High,Very High,Very High,Moderate,Very High,Very High,Moderate,Moderate,Low,"Religious Activities, Outdoor Activities"
+Male,20,Undergraduate,Data Science,3rd year,3.5-4.0,Off-Campus,Yes,No Sports,7-8 hrs,High,High,Moderate,Very Low,Very Low,Moderate,Moderate,Very High,Low,Online Entertainment
+Male,20,Undergraduate,Data Science,2nd year,3.0-3.5,On-Campus,No,No Sports,4-6 hrs,Very High,Moderate,Very Low,Very High,Moderate,Very Low,Very Low,Low,Very Low,Religious Activities
+Male,20,Undergraduate,Computer Science,3rd year,3.5-4.0,Off-Campus,Yes,4-6 times,7-8 hrs,High,Moderate,Very High,Moderate,Moderate,High,High,High,High,Outdoor Activities
+Male,20,Undergraduate,Data Science,1st year,0.0-0.0,On-Campus,No,No Sports,4-6 hrs,High,High,High,Very High,Low,Moderate,Low,High,Low,Sleep
+Male,20,Undergraduate,Data Science,2nd year,3.5-4.0,Off-Campus,No,4-6 times,7-8 hrs,Very High,Low,Low,Very Low,Moderate,Very Low,Very Low,Very Low,Very Low,"Religious Activities, Social Connections"
+Male,20,Undergraduate,Computer Science,3rd year,3.0-3.5,Off-Campus,No,1-3 times,4-6 hrs,Moderate,High,Moderate,High,Very Low,Very Low,Low,Very Low,Moderate,"Religious Activities, Social Connections, Online Entertainment"
+Male,20,Undergraduate,Computer Science,3rd year,3.5-4.0,Off-Campus,No,7+ times,7-8 hrs,Very High,Moderate,High,Moderate,Low,High,High,High,Very High,"Religious Activities, Sports and Fitness, Social Connections, Online Entertainment, Outdoor Activities, Sleep"
+Male,20,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,Yes,1-3 times,4-6 hrs,Moderate,High,High,Very High,Moderate,Very High,Very High,Very High,High,"Religious Activities, Sports and Fitness, Creative Outlets, Online Entertainment"
+Male,20,Undergraduate,Computer Science,3rd year,3.5-4.0,On-Campus,No,No Sports,7-8 hrs,Moderate,Moderate,High,Very High,Moderate,High,High,High,High,Social Connections
+Male,20,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,No,1-3 times,4-6 hrs,High,Very High,Very High,Very Low,Very High,Moderate,High,Very Low,Very Low,"Religious Activities, Sports and Fitness, Social Connections, Sleep"
+Male,20,Undergraduate,Computer Science,3rd year,3.5-4.0,On-Campus,No,No Sports,4-6 hrs,High,Very High,Very High,Moderate,Moderate,Low,Low,Moderate,Moderate,"Religious Activities, Social Connections, Online Entertainment, Sleep"
+Male,20,Undergraduate,Computer Science,3rd year,2.5-3.0,On-Campus,No,7+ times,4-6 hrs,High,Very High,Very High,Very High,High,Moderate,High,Low,Moderate,"Social Connections, Sleep"
+Male,20,Undergraduate,Computer Science,3rd year,3.0-3.5,Off-Campus,No,7+ times,7-8 hrs,High,Low,Moderate,High,Low,Moderate,Moderate,High,Moderate,"Religious Activities, Sports and Fitness, Sleep"
+Female,20,Undergraduate,Computer Science,3rd year,3.5-4.0,Off-Campus,No,No Sports,4-6 hrs,Very High,High,Very High,High,Very Low,High,Very High,Very High,High,Online Entertainment
+Male,21,Undergraduate,Computer Science,3rd year,3.5-4.0,On-Campus,No,No Sports,4-6 hrs,Very High,Moderate,Very High,Very High,Very Low,High,High,High,Low,Nothing
+Male,21,Undergraduate,Software Engineering,4th year,3.5-4.0,Off-Campus,Yes,1-3 times,4-6 hrs,Moderate,High,Very High,High,Moderate,Very High,Very High,Very High,Very High,"Religious Activities, Sports and Fitness, Creative Outlets, Online Entertainment"
+Male,21,Undergraduate,Data Science,2nd year,3.5-4.0,On-Campus,No,1-3 times,4-6 hrs,Very High,High,Moderate,High,Very High,Low,Low,Low,Moderate,"Religious Activities, Social Connections, Online Entertainment, Sleep"
+Male,21,Undergraduate,Data Science,2nd year,2.5-3.0,On-Campus,Yes,4-6 times,4-6 hrs,Moderate,High,Very High,Moderate,High,Very Low,Very Low,Very Low,Very Low,"Religious Activities, Social Connections"
+Male,21,Undergraduate,Data Science,3rd year,2.0-2.5,Off-Campus,No,1-3 times,7-8 hrs,Moderate,Very High,High,Very Low,Moderate,Low,Low,High,High,"Religious Activities, Sports and Fitness"
+Male,21,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,No,4-6 times,7-8 hrs,High,High,High,Low,High,Low,Low,Low,Moderate,Outdoor Activities
+Male,21,Undergraduate,Data Science,1st year,3.5-4.0,Off-Campus,No,7+ times,7-8 hrs,Very High,Moderate,Moderate,Low,High,Very Low,Very Low,Low,Low,"Religious Activities, Social Connections"
+Female,21,Undergraduate,Information Technology,4th year,3.5-4.0,Off-Campus,Yes,No Sports,7-8 hrs,Moderate,Moderate,Moderate,Moderate,Moderate,Very High,Very High,Very High,Very Low,Sleep
+Female,21,Undergraduate,Information Technology,4th year,3.0-3.5,Off-Campus,No,No Sports,7-8 hrs,Moderate,High,High,Moderate,High,High,High,Low,High,"Online Entertainment, Sleep"
+Male,21,Undergraduate,Data Science,2nd year,2.0-2.5,Off-Campus,No,No Sports,4-6 hrs,Very High,High,Low,High,Moderate,Very Low,Low,Very Low,Very Low,"Religious Activities, Sports and Fitness, Social Connections, Online Entertainment, Outdoor Activities, Sleep"
+Male,22,Undergraduate,Data Science,2nd year,3.0-3.5,Off-Campus,Yes,No Sports,4-6 hrs,Moderate,High,High,Very High,High,Moderate,Low,Low,High,"Religious Activities, Social Connections, Online Entertainment"
+Male,22,Undergraduate,Software Engineering,4th year,3.0-3.5,Off-Campus,No,1-3 times,7-8 hrs,High,High,Moderate,Very High,Very Low,Moderate,Moderate,High,Very Low,"Religious Activities, Sports and Fitness, Outdoor Activities"
+Male,22,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,No,No Sports,4-6 hrs,High,High,Very High,High,Moderate,High,High,High,Very High,Religious Activities
+Male,22,Undergraduate,Information Technology,4th year,3.0-3.5,Off-Campus,No,4-6 times,4-6 hrs,Very High,Moderate,Moderate,Moderate,High,Low,Low,Low,High,"Social Connections, Outdoor Activities"
+Male,22,Undergraduate,Information Technology,4th year,3.0-3.5,Off-Campus,Yes,No Sports,4-6 hrs,Very High,High,Low,Very High,Very Low,Very High,Very High,Very High,Moderate,"Religious Activities, Sports and Fitness, Online Entertainment"
+Male,22,Undergraduate,Information Technology,4th year,2.5-3.0,Off-Campus,No,No Sports,7-8 hrs,Very Low,Low,Low,Very Low,Low,Low,Low,Very High,Low,Religious Activities
+Male,22,Undergraduate,Information Technology,4th year,3.0-3.5,On-Campus,No,No Sports,7-8 hrs,High,Moderate,Very Low,High,High,Low,Moderate,Very Low,Low,"Online Entertainment, Outdoor Activities, Sleep"
+Female,22,Undergraduate,Software Engineering,4th year,3.5-4.0,Off-Campus,Yes,No Sports,2-4 hrs,Very High,Very High,Very High,Very High,Very Low,Very High,Very High,Very High,Very High,"Religious Activities, Sleep"
+Male,22,Undergraduate,Data Science,2nd year,2.5-3.0,Off-Campus,No,No Sports,4-6 hrs,Moderate,Moderate,Moderate,Moderate,Low,Moderate,High,High,Very High,Sleep
+Male,23,Undergraduate,Computer Science,3rd year,2.5-3.0,Off-Campus,No,No Sports,4-6 hrs,Moderate,Very High,Moderate,Very High,Very Low,Very High,Very High,Very High,Very High,Sports and Fitness
+Male,23,Undergraduate,Data Science,2nd year,2.5-3.0,Off-Campus,Yes,1-3 times,7-8 hrs,Moderate,Moderate,High,Very Low,High,Moderate,Moderate,Low,Moderate,"Religious Activities, Online Entertainment, Outdoor Activities"
+Male,26,Postgraduate,Data Science,1st year,2.5-3.0,On-Campus,Yes,1-3 times,7-8 hrs,High,High,High,Very High,Low,Very High,High,High,Very High,"Social Connections, Online Entertainment"
+Male,26,Undergraduate,Data Science,4th year,3.5-4.0,Off-Campus,Yes,1-3 times,7-8 hrs,Very High,Very High,Very Low,Very High,Very Low,Very High,Very High,Moderate,Very High,"Creative Outlets, Social Connections, Online Entertainment"
